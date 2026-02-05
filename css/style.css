@@ -327,6 +327,16 @@ header p {
     opacity: 1;
 }
 
+.card {
+    animation: pulse-card 2s ease-in-out infinite;
+}
+
+@keyframes pulse-card {
+    0%   { transform: scale(1) perspective(2000px); }
+    50%  { transform: scale(1.04) perspective(2000px); }
+    100% { transform: scale(1) perspective(2000px); }
+}
+
 
 .timer {
     display: grid;
